@@ -2,7 +2,8 @@
 this is an old project I made and used before learning how cmake works
 
 
-##How to use
+## How to use
+
 At the top of the compile.py file, add the library folder path to paths_to_search variable, add any include folder to include variable, and any library to the link_libs variable
 
 NOTE: make sure that any external library that you may wanna add is in this particular folder structure
