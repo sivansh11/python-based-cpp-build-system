@@ -16,7 +16,6 @@ NOTE: make sure that any external library that you may wanna add is in this part
           <li>src:</li>
           <li>include:</li>
         </ul>
-      
       <li>lib2:</li>
         <ul>
           <li>src:</li>
