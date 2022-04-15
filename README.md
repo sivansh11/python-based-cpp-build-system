@@ -12,17 +12,17 @@ NOTE: make sure that any external library that you may wanna add is in this part
   <li>libs:</li>
     <ul>
       <li>lib1:</li>
-      <ul>
-        <li>src:</li>
-        <li>include:</li>
-      </ul>
+        <ul>
+          <li>src:</li>
+          <li>include:</li>
+        </ul>
       
       <li>lib2:</li>
-      <ul>
-        <li>src:</li>
-        <li>include:</li>
-      </ul>
-  </ul>
+        <ul>
+          <li>src:</li>
+          <li>include:</li>
+        </ul>
+    </ul>
 
   <li>src:</li>
 
