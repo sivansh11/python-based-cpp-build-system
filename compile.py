@@ -3,29 +3,30 @@ import os
 import hashlib
 from colorama import Fore
 
-
+# project folders
+# every thing that has a libs is an external folder downloaded from git
 include_folder = 'include'
 src_folder = 'src'
-# GL_folder = 'libs/glad'
-# imgui_folder = 'libs/imgui' 
-# stb_folder = 'libs/stb_image'
-# tiny_obj_loader_folder = 'libs/tinyObjLoader'
-# glm_folder = 'libs/glm'
-# json_folder = 'libs/json'
+GL_folder = 'libs/glad'
+imgui_folder = 'libs/imgui' 
+stb_folder = 'libs/stb_image'
+tiny_obj_loader_folder = 'libs/tinyObjLoader'
+json_folder = 'libs/json'
 
-paths_to_search = [include_folder, src_folder]  #, GL_folder, imgui_folder, stb_folder, tiny_obj_loader_folder, glm_folder, json_folder]
-
-saved = 'pystuff/filehash.txt'
-
-o_folder = 'build'
+paths_to_search = [include_folder, src_folder, GL_folder, imgui_folder, stb_folder, tiny_obj_loader_folder, json_folder]
 
 app_name = 'app'
 
+# g++ flags
 flags = ['-std=c++17', '-g', '-D DEBUG']
-# flags = ['-std=c++17', '-g']
-includes = ['-I include/']  #, '-I libs/imgui/include/', '-I libs/stb_image/include/', '-I libs/glad/include/', '-I libs/tinyObjLoader/include', '-I libs/json/include']
-link_libs = []  #'-lglfw', '-lGL', '-ldl']
+# g++ includes
+includes = ['-I include/', '-I libs/imgui/include/', '-I libs/stb_image/include/', '-I libs/glad/include/', '-I libs/tinyObjLoader/include', '-I libs/json/include']
+# g++ link libraries
+link_libs = ['-lglfw', '-lGL', '-ldl']
 
+
+o_folder = 'build'
+saved = 'pystuff/filehash.txt'
 
 def read_file(file_path):  # Reads all lines in a file and stores them in a list (line by line)
     file = open(file_path, 'r')
